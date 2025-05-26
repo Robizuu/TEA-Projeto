@@ -1,0 +1,101 @@
+.cabecalho-menu-pesquisa {
+    width: 24px;
+    height: 50px;
+    background-image: url(../assets/Lupa.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    background-size: contain;
+    cursor: pointer;
+    position: relative;
+    filter: invert(1);
+}
+
+.container-botao {
+    display: none;
+}
+
+.opcoes__link {
+    color: var(--branco);
+    text-decoration: none;
+}
+
+.cabecalho {
+    background-color: var(--cor-secundaria);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0 10em;
+    z-index: 3;
+}
+
+.cabecalho-logo {
+    height: 30px;
+}
+
+.opcoes {
+    display: flex;
+    gap: 45px;
+}
+
+.cabecalho-pesquisa {
+    display: none;
+    position: absolute;
+    background-color: var(--branco);
+    top: 12.5vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    padding: 5vh 25vw 5vh 25vw;
+    z-index: 2;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.container-botao:hover~.cabecalho-pesquisa {
+    display: block;
+}
+
+.cabecalho-pesquisa:hover {
+    display: block;
+}
+
+.cabecalho-input {
+    border: 1px solid var(--cor-secundaria);
+    color: var(--cor-secundaria);
+    border-radius: 24px;
+    padding: 1em;
+    width: 100%;
+    font-family: var(--fonte-principal);
+}
+
+@media (max-width:1600px) {
+    .cabecalho-pesquisa {
+        top: 14.5vh;
+    }
+}
+
+@media (max-width:768px) {
+    .cabecalho {
+        padding: 0.5em 1em;
+    }
+
+    .cabecalho-pesquisa {
+        top: 14.5vh;
+        padding: 5vh 25vw 5vh 25vw;
+        width: 50vw;
+    }
+
+    .opcoes {
+        gap: 2em;
+    }
+
+    .container-botao:hover~.cabecalho-pesquisa {
+    display: none;
+    }
+    
+    .container-botao:checked~ .cabecalho-pesquisa {
+        display: block;
+    }
+
+}

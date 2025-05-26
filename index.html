@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEA</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="./assets/logo-placeholder.png" alt="Logo da TEA" class="cabecalho-logo">
+        <ul class="opcoes">
+                <li class="opcoes__item"> <a href="#" class="opcoes__link">Produtos</a></li>
+                <li class="opcoes__item"> <a href="#" class="opcoes__link">Drivers</a></li>
+                <li class="opcoes__item"> <a href="#" class="opcoes__link">Shop</a></li>
+        </ul>
+        <div class="container">
+            <input type="checkbox" id="menu" class="container-botao">
+            <label for="menu" class="container-rotulo">
+                <span class="cabecalho-menu-pesquisa"></span>
+            </label>
+            <div class="cabecalho-pesquisa">
+                <input type="search" class="cabecalho-input" placeholder="Pesquise aqui:">
+            </div>    
+        </div>
+    </header>
+
+    <main>
+        <section class="carrossel">
+            <div class="carrossel-container">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/Carrossel 1.png" alt="Livro sobre Apache Kafka e spring boot da Alura Books">
+                            <p class="carrossel-texto">Processadores de Alta Performance</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/Carrossel 2.png" alt="Livro sobre liderança em design da Alura Books">
+                            <p class="carrossel-texto">Microchips de Última Geração</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/Carrossel 3.png" alt="Livro sobre javascript assertivo da Alura Books">
+                            <p class="carrossel-texto">Circuitos de Alta Confiabilidade</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/Carrossel 4.png" alt="Livro sobre Front-End da Alura Books">
+                            <p class="carrossel-texto">Tecnologia de Precisão</p>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div> 
+            <div class="swiper-pagination"></div>
+        </section>
+
+        <section class="topicos">
+            <h2 class="topicos-tema">O que há de novo?</h2>
+            <div class="topicos-container">
+                <article class="topicos-article">
+                    <img src="./assets/Section 1.png" alt="Homem mexendo com processador" class="topicos-imagem">
+                    <h2 class="topicos-titulo">Soluções em Eletrônica Personalizadas</h2>
+                    <p class="topicos-texto">Na TEA, oferecemos soluções de hardware sob medida, transformando desafios em inovações com precisão e desempenho.</p>
+                    <a href="#" class="topicos-link">Saiba mais</a>
+                </article>
+                <article class="topicos-article">
+                    <img src="./assets/Section 2.png" alt="Homem mexendo com processador" class="topicos-imagem">
+                    <h2 class="topicos-titulo">Tecnologia de Ponta em Semicondutores</h2>
+                    <p class="topicos-texto">A TEA lidera o mercado de semicondutores no Brasil, impulsionando indústrias com eficiência e confiabilidade.</p>
+                    <a href="#" class="topicos-link">Saiba mais</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="secao-background">
+            <h2 class="background-titulo">Desenvolvido para<br>turbinar seus processos!</h2>
+        </section>
+
+        <section class="blocos">
+            <div class="blocos-container">
+                <h2 class="blocos-titulo">Inovações</h2>
+                <p class="blocos-texto">O que podemos entregar<br>ao seu negócio?</p>
+            </div>
+            <div class="blocos-container-textos">
+                <a href="#" class="bloco-maior">Revolução<br>Tecnológica</a>
+                <div class="container-lista">   
+                    <ul class="lista-menor">
+                        <li class="lista-objeto"><a href="#" class="bloco-menor">Alta<br>Performance</a></li>
+                        <li class="lista-objeto"><a href="#" class="bloco-menor">Eficiência<br>Energética</a></li>
+                        <li class="lista-objeto"><a href="#" class="bloco-menor">Miniaturização Avançada</a></li>
+                        <li class="lista-objeto"><a href="#" class="bloco-menor">Velocidade Ultrapassada</a></li>
+                    </ul>
+                    <ul class="lista-menor">
+                        <li class="lista-objeto"><a href="#" class="bloco-menor">Confiabilidade Superior</a></li>
+                        <li class="lista-objeto"><a href="#" class="bloco-menor">Inteligência Integrada</a></li>
+                        <li class="lista-objeto"><a href="#" class="bloco-menor">Conectividade<br>5G</a></li>
+                        <li class="lista-objeto"><a href="#" class="bloco-menor">Sustentabilidade Garantida</a></li>
+                    </ul>
+                </div> 
+            </div>
+        </section>
+
+        <section class="pesquisa">
+            <h3 class="pesquisa-texto">Receba as próximas<br>novidades!</h3>
+            <input type="email" class="pesquisa-busca" placeholder="Digite seu email:">
+        </section>
+    </main>
+    
+    <footer class="rodape">
+        <ul class="rodape-lista">
+            <li class="lista-principal">
+                <h3 class="lista-titulo">Sobre a TEA</h3>
+                <p class="lista-texto">Somos pioneiros no Brasil no desenvolvimento<br>de semicondutores de alta performance, entregando soluções<br>inovadoras para o mercado global.</p>
+            </li>
+            <li class="lista-classes">
+                <h3 class="lista-titulo">Contato</h3>
+                <p class="lista-texto">Endereço: Rua da Inovação, 123, São Paulo - SP</p>
+                <p class="lista-texto">Telefone: (11)98765-4321</p>
+                <p class="lista-texto">Email: <a href="#" class="lista-ancora">contato@tea.com.br</a></p>
+            </li>
+            <li class="lista-classes">
+                <h3 class="lista-titulo">Serviços</h3>
+                <p class="lista-texto">Design e fabricação de semicondutores</p>
+                <p class="lista-texto">Consultoria em soluções tecnológicas</p>
+                <p class="lista-texto">Desenvolvimento de hardware customizado</p>
+            </li>
+            <li class="lista-classes">
+                <h3 class="lista-titulo">Redes Sociais</h3>
+                <p class="lista-texto">LinkedIn: <a href="#" class="lista-ancora">linkedin.com/company/tea-semicondutores</a></p>
+                <p class="lista-texto">Twitter: <a href="#" class="lista-ancora">@TEASemicondutores</a></p>
+                <p class="lista-texto">Instagram: <a href="#" class="lista-ancora">@TEASemicondutores</a></p>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 1,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            }
+        });
+    </script>
+
+</body>
+</html>

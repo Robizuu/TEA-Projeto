@@ -1,0 +1,114 @@
+.blocos {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.blocos-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 4em 0 2em 0;
+}
+
+.blocos-titulo {
+    font-size: 2rem;
+    font-family: var(--fonte-principal);
+}
+
+.blocos-texto {
+    font-size: 3.43rem;
+    font-family: var(--fonte-principal);
+}
+
+.blocos-container-textos {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.blocos-container,
+.blocos-container-textos {
+    width: 100%;
+}
+
+.container-lista {
+    justify-content: space-between;
+}
+
+.lista-menor {
+    display: flex;
+}
+
+.bloco-maior {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 13em;
+    height: 8.5em;
+    background-color: var(--cor-secundaria);
+    color: var(--branco);
+    font-size: 40px;
+    text-decoration: none;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.bloco-maior:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.bloco-menor {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 10em;
+    height: 10em;
+    background-color: var(--cor-secundaria);
+    color: var(--branco);
+    margin: 0.5em;
+    text-decoration: none;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.bloco-menor:hover {
+    transform: scale(1.07);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width:768px) {
+    .blocos-container-textos {
+        flex-direction: column;
+    }
+
+    .bloco-maior {
+        width: 8.4em;
+    }
+
+    .lista-menor {
+        flex-direction: column;
+    }
+
+    .container-lista {
+        display: flex;
+    }
+
+    .blocos-container {
+        text-align: center;
+    }
+
+    .blocos-titulo {
+        font-size: 1.56rem;
+    }
+
+    .blocos-texto {
+        padding-top: 0.5em;
+        font-size: 2.5rem;
+    }
+}

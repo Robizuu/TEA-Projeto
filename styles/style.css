@@ -1,0 +1,26 @@
+@import url(../styles/header.css);
+@import url(../styles/carrossel.css);
+@import url(../styles/topicos.css);
+@import url(../styles/background.css);
+@import url(../styles/blocos.css);
+@import url(../styles/pesquisa.css);
+@import url(../styles/rodape.css);
+
+:root {
+    --cor-de-fundo: #E0E0E0;
+    --cor-secundaria: #E30613;
+    --cor-terciaria: #4E4E4E;
+    --branco: #f6f6f6;
+    --preto: #000000;
+    --cinza: #858585;
+    --fonte-principal: "Rubik", sans-serif;
+    --fonte-secundaria: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-secundaria);
+    color: var(--preto);
+    font-size: 1rem;
+    font-weight: 400;
+}
