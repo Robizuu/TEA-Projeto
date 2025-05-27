@@ -1,87 +1,88 @@
 .topicos {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Organiza os tópicos em coluna */
+    align-items: center; /* Centraliza horizontalmente o conteúdo */
 }
 
 .topicos-container {
-    display: flex;
-    margin: 0 20vw 3em 20vw;
-    gap: 3em;
+    display: flex; /* Container flexível para os artigos */
+    margin: 0 20vw 3em 20vw; /* Margem horizontal grande para espaçamento nas laterais */
+    gap: 3em; /* Espaçamento uniforme entre os artigos */
 }
 
 .topicos-article {
-    padding-bottom: 3vh;
-    background-color: var(--cor-secundaria);
-    color: var(--branco);
-    border-radius: 26px;
+    padding-bottom: 3vh; /* Espaço interno inferior para respiro */
+    background-color: var(--cor-secundaria); /* Fundo vermelho para destaque */
+    color: var(--branco); /* Texto branco para contraste */
+    border-radius: 26px; /* Bordas arredondadas para estilo moderno */
 }
 
 .topicos-imagem {
-    border-radius: 24px 24px 0 0;
-    width: 550px;
+    border-radius: 24px 24px 0 0; /* Bordas arredondadas apenas no topo da imagem */
+    width: 550px; /* Largura fixa para consistência visual */
 }
 
 .topicos-tema {
-    margin: 1em 0 1em 0;
-    font-size: 35px;
-    font-family: var(--fonte-principal);
+    margin: 1em 0 1em 0; /* Margem vertical para separar do conteúdo acima e abaixo */
+    font-size: 35px; /* Tamanho grande para o título da seção */
+    font-family: var(--fonte-principal); /* Fonte personalizada para destaque */
 }
 
 .topicos-titulo {
-    font-size: 28px;
+    font-size: 28px; /* Título menor que o tema mas ainda destacado */
     margin-top: 3vh;
-    margin-bottom: 3vh;
+    margin-bottom: 3vh; /* Espaço acima e abaixo do título */
     font-family: var(--fonte-principal);
 }
 
 .topicos-texto {
-    margin-bottom: 4vh;
-    text-align: left;
-    font-size: 1rem;
+    margin-bottom: 4vh; /* Espaço abaixo do parágrafo */
+    text-align: left; /* Texto alinhado à esquerda para legibilidade */
+    font-size: 1rem; /* Tamanho padrão para parágrafos */
 }
 
 .topicos-texto,
 .topicos-titulo,
 .topicos-link {
-    margin-right: 2vw;
+    margin-right: 2vw; /* Margem lateral para não colar nas bordas */
     margin-left: 2vw;
 }
 
 .topicos-link {
-    text-decoration: none;
-    color: var(--cor-secundaria);
-    padding: 1em;
-    background-color: var(--branco);
-    font-size: 1.25rem;
-    border-radius: 16px;
-    display: inline-block;
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    text-decoration: none; /* Remove sublinhado do link */
+    color: var(--cor-secundaria); /* Cor vermelha para destacar o link */
+    padding: 1em; /* Espaçamento interno para área clicável maior */
+    background-color: var(--branco); /* Fundo branco para contraste */
+    font-size: 1.25rem; /* Fonte maior para chamar atenção */
+    border-radius: 16px; /* Bordas arredondadas para o botão */
+    display: inline-block; /* Permite aplicar padding e margin corretamente */
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Animação suave para hover */
 }
 
 .topicos-link:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1); /* Aumenta levemente o botão ao passar o mouse */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Sombra para efeito de profundidade */
 }
 
+/* Responsividade para telas menores */
 @media (max-width:768px) {
     .topicos-container {
-        flex-direction: column;
+        flex-direction: column; /* Empilha os artigos em coluna */
     }
 
     .topicos-imagem {
-        width: 350px;
+        width: 350px; /* Imagem menor para caber melhor na tela */
     }
 
     .topicos-texto,
     .topicos-titulo,
     .topicos-link {
-    margin-right: 6vw;
+    margin-right: 6vw; /* Margens laterais maiores para espaçamento */
     margin-left: 6vw;
     }
 
     .topicos-article {
-        border-radius: 24px;
-        width: 350px;
+        border-radius: 24px; /* Leve ajuste no raio das bordas */
+        width: 350px; /* Largura fixa para artigos em mobile */
     }
 }

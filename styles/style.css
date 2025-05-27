@@ -1,26 +1,48 @@
 @import url(../styles/header.css);
+/* Importa o arquivo de estilos específico para o cabeçalho */
 @import url(../styles/carrossel.css);
+/* Importa o arquivo de estilos específico para o carrossel */
 @import url(../styles/topicos.css);
+/* Importa o arquivo de estilos específico para a seção de tópicos */
 @import url(../styles/background.css);
+/* Importa o arquivo de estilos específico para a seção de fundo personalizado */
 @import url(../styles/blocos.css);
+/* Importa o arquivo de estilos específico para a seção de blocos de inovações */
 @import url(../styles/pesquisa.css);
+/* Importa o arquivo de estilos específico para a seção de pesquisa de e-mails */
 @import url(../styles/rodape.css);
+/* Importa o arquivo de estilos específico para o rodapé */
 
 :root {
+    /* Define as variáveis globais para uso em todo o arquivo de estilos */
     --cor-de-fundo: #E0E0E0;
+    /* Cor de fundo principal do site */
     --cor-secundaria: #E30613;
+    /* Cor secundária para elementos destacados */
     --cor-terciaria: #4E4E4E;
+    /* Cor terciária para elementos adicionais */
     --branco: #f6f6f6;
+    /* Definição da cor branca */
     --preto: #000000;
+    /* Definição da cor preta */
     --cinza: #858585;
+    /* Definição de um tom de cinza */
     --fonte-principal: "Rubik", sans-serif;
+    /* Fonte principal usada em textos destacados */
     --fonte-secundaria: 'Open Sans', sans-serif;
+    /* Fonte secundária usada em textos gerais */
 }
 
 body {
+    /* Estilos aplicados ao corpo principal da página */
     background-color: var(--cor-de-fundo);
+    /* Define a cor de fundo do corpo como a variável de cor de fundo */
     font-family: var(--fonte-secundaria);
+    /* Aplica a fonte secundária como padrão para o corpo do texto */
     color: var(--preto);
+    /* Define a cor do texto como preto */
     font-size: 1rem;
+    /* Define o tamanho da fonte padrão como 1 rem */
     font-weight: 400;
+    /* Define o peso da fonte padrão como 400 (regular) */
 }

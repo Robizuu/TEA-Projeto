@@ -1,159 +1,286 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Define o conjunto de caracteres como UTF-8, garantindo suporte a caracteres especiais -->
     <meta charset="UTF-8">
+    <!-- Configura a viewport para responsividade, ajustando a escala conforme o dispositivo -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página que aparece na aba do navegador -->
     <title>TEA</title>
+    <!-- Reset CSS para normalizar estilos entre diferentes navegadores -->
     <link rel="stylesheet" href="./styles/reset.css">
+    <!-- Pré-conexões para acelerar o carregamento das fontes do Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importa as fontes 'Open Sans' e 'Rubik' do Google Fonts com várias variações de peso e estilo -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- Importa o CSS do Swiper (biblioteca para carrossel/slideshow) via CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- Link para o arquivo CSS principal do projeto -->
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
+    
     <header class="cabecalho">
+        <!-- Início da seção de cabeçalho, estilizada com a classe "cabecalho" -->
         <img src="./assets/logo-placeholder.png" alt="Logo da TEA" class="cabecalho-logo">
+            <!-- Logotipo da empresa com classe para estilização -->
         <ul class="opcoes">
-                <li class="opcoes__item"> <a href="#" class="opcoes__link">Produtos</a></li>
-                <li class="opcoes__item"> <a href="#" class="opcoes__link">Drivers</a></li>
-                <li class="opcoes__item"> <a href="#" class="opcoes__link">Shop</a></li>
+            <!-- Lista não ordenada para os itens do menu de navegação -->
+                <li class="opcoes__item">
+                    <!-- Item do menu -->
+                    <a href="#" class="opcoes__link">Produtos</a>
+                    <!-- Link para a seção de "Produtos" -->
+                </li>
+                <li class="opcoes__item">
+                    <!-- Item do menu -->
+                    <a href="#" class="opcoes__link">Drivers</a>
+                    <!-- Link para a seção de "Drivers" -->
+                </li>
+                <li class="opcoes__item">
+                    <!-- Item do menu -->
+                    <a href="#" class="opcoes__link">Shop</a>
+                    <!-- Link para a seção de "Shop" -->
+                </li>
         </ul>
         <div class="container">
+            <!-- Contêiner para o botão do menu e a barra de pesquisa -->
             <input type="checkbox" id="menu" class="container-botao">
+            <!-- Checkbox para controlar o estado do menu responsivo -->
             <label for="menu" class="container-rotulo">
+                <!-- Rótulo para o checkbox que serve como botão -->
                 <span class="cabecalho-menu-pesquisa"></span>
             </label>
             <div class="cabecalho-pesquisa">
+                <!-- Div para a barra de pesquisa -->
                 <input type="search" class="cabecalho-input" placeholder="Pesquise aqui:">
+                <!-- Campo de entrada de pesquisa com um placeholder -->
             </div>    
         </div>
     </header>
 
     <main>
         <section class="carrossel">
+            <!-- Seção do carrossel que exibe uma galeria de imagens e textos -->
             <div class="carrossel-container">
+                <!-- Contêiner principal do carrossel para estilização e layout -->
                 <div class="swiper">
+                    <!-- Contêiner para o plugin Swiper, que gerencia a funcionalidade do carrossel -->
                     <div class="swiper-wrapper">
+                        <!-- Contêiner que agrupa todos os slides do carrossel -->
                         <div class="swiper-slide">
-                            <img src="./assets/Carrossel 1.png" alt="Livro sobre Apache Kafka e spring boot da Alura Books">
+                            <!-- Slide do carrossel -->
+                            <img src="./assets/Carrossel 1.png" alt="Foto de um Processador">
+                            <!-- Imagem do slide com descrição para acessibilidade -->
                             <p class="carrossel-texto">Processadores de Alta Performance</p>
+                            <!-- Texto descritivo para o slide -->
                         </div>
                         <div class="swiper-slide">
-                            <img src="./assets/Carrossel 2.png" alt="Livro sobre liderança em design da Alura Books">
+                            <!-- Slide do carrossel -->
+                            <img src="./assets/Carrossel 2.png" alt="Foto de um Processador">
+                            <!-- Imagem do slide com descrição para acessibilidade -->
                             <p class="carrossel-texto">Microchips de Última Geração</p>
+                            <!-- Texto descritivo para o slide -->
                         </div>
                         <div class="swiper-slide">
-                            <img src="./assets/Carrossel 3.png" alt="Livro sobre javascript assertivo da Alura Books">
+                            <!-- Slide do carrossel -->
+                            <img src="./assets/Carrossel 3.png" alt="Foto de uma Placa">
+                            <!-- Imagem do slide com descrição para acessibilidade -->
                             <p class="carrossel-texto">Circuitos de Alta Confiabilidade</p>
+                            <!-- Texto descritivo para o slide -->
                         </div>
                         <div class="swiper-slide">
-                            <img src="./assets/Carrossel 4.png" alt="Livro sobre Front-End da Alura Books">
+                            <!-- Slide do carrossel -->
+                            <img src="./assets/Carrossel 4.png" alt="Foto de uma Placa">
+                            <!-- Imagem do slide com descrição para acessibilidade -->
                             <p class="carrossel-texto">Tecnologia de Precisão</p>
+                            <!-- Texto descritivo para o slide -->
                         </div>
                     </div>
+                    <!-- Fim do contêiner dos slides -->
+
                     <div class="swiper-button-prev"></div>
+                    <!-- Botão para navegar para o slide anterior -->
                     <div class="swiper-button-next"></div>
+                    <!-- Botão para navegar para o próximo slide -->
                 </div>
+                <!-- Fim do contêiner do Swiper -->
             </div> 
+            <!-- Fim do contêiner principal do carrossel -->
             <div class="swiper-pagination"></div>
+            <!-- Contêiner para os indicadores de paginação do carrossel -->
         </section>
+        <!-- Fim da seção do carrossel -->
 
         <section class="topicos">
+            <!-- Seção de tópicos destacando novidades e soluções oferecidas pela empresa -->
             <h2 class="topicos-tema">O que há de novo?</h2>
+            <!-- Título principal da seção -->
             <div class="topicos-container">
+                <!-- Contêiner que agrupa os artigos de tópicos -->
                 <article class="topicos-article">
+                    <!-- Primeiro artigo que destaca uma solução específica -->
                     <img src="./assets/Section 1.png" alt="Homem mexendo com processador" class="topicos-imagem">
+                    <!-- Imagem ilustrativa com descrição para acessibilidade -->
                     <h2 class="topicos-titulo">Soluções em Eletrônica Personalizadas</h2>
+                    <!-- Título do artigo -->
                     <p class="topicos-texto">Na TEA, oferecemos soluções de hardware sob medida, transformando desafios em inovações com precisão e desempenho.</p>
+                    <!-- Texto descritivo explicando a solução -->
                     <a href="#" class="topicos-link">Saiba mais</a>
+                    <!-- Link para mais informações sobre a solução -->
                 </article>
                 <article class="topicos-article">
+                    <!-- Segundo artigo que destaca outra solução específica -->
                     <img src="./assets/Section 2.png" alt="Homem mexendo com processador" class="topicos-imagem">
+                    <!-- Imagem ilustrativa com descrição para acessibilidade -->
                     <h2 class="topicos-titulo">Tecnologia de Ponta em Semicondutores</h2>
+                    <!-- Título do artigo -->
                     <p class="topicos-texto">A TEA lidera o mercado de semicondutores no Brasil, impulsionando indústrias com eficiência e confiabilidade.</p>
+                    <!-- Texto descritivo explicando a solução -->
                     <a href="#" class="topicos-link">Saiba mais</a>
+                    <!-- Link para mais informações sobre a solução -->
                 </article>
             </div>
+            <!-- Fim do contêiner dos artigos de tópicos -->
         </section>
+        <!-- Fim da seção de tópicos -->
 
         <section class="secao-background">
+            <!-- Seção com fundo personalizado, provavelmente utilizada para destacar uma mensagem ou tema -->
             <h2 class="background-titulo">Desenvolvido para<br>turbinar seus processos!</h2>
+            <!-- Título principal com estilo personalizado e quebra de linha para ênfase -->
         </section>
+        <!-- Fim da seção de fundo personalizado -->
 
         <section class="blocos">
+            <!-- Seção destacando inovações com blocos de informações clicáveis -->
             <div class="blocos-container">
+                <!-- Contêiner principal para o título e descrição da seção -->
                 <h2 class="blocos-titulo">Inovações</h2>
+                <!-- Título da seção -->
                 <p class="blocos-texto">O que podemos entregar<br>ao seu negócio?</p>
+                <!-- Texto introdutório com quebra de linha para ênfase -->
             </div>
             <div class="blocos-container-textos">
+                <!-- Contêiner para os blocos principais e as listas -->
                 <a href="#" class="bloco-maior">Revolução<br>Tecnológica</a>
-                <div class="container-lista">   
+                <!-- Bloco maior com link que destaca uma inovação geral -->
+                <div class="container-lista">
+                    <!-- Contêiner para as listas menores de inovações -->
                     <ul class="lista-menor">
+                        <!-- Primeira lista de inovações -->
                         <li class="lista-objeto"><a href="#" class="bloco-menor">Alta<br>Performance</a></li>
+                        <!-- Bloco menor com quebra de linha para enfatizar "Alta Performance" -->
                         <li class="lista-objeto"><a href="#" class="bloco-menor">Eficiência<br>Energética</a></li>
+                        <!-- Bloco menor destacando "Eficiência Energética" -->
                         <li class="lista-objeto"><a href="#" class="bloco-menor">Miniaturização Avançada</a></li>
+                        <!-- Bloco menor destacando "Miniaturização Avançada" -->
                         <li class="lista-objeto"><a href="#" class="bloco-menor">Velocidade Ultrapassada</a></li>
+                        <!-- Bloco menor destacando "Velocidade Ultrapassada" -->
                     </ul>
                     <ul class="lista-menor">
+                        <!-- Segunda lista de inovações -->
                         <li class="lista-objeto"><a href="#" class="bloco-menor">Confiabilidade Superior</a></li>
+                        <!-- Bloco menor destacando "Confiabilidade Superior" -->
                         <li class="lista-objeto"><a href="#" class="bloco-menor">Inteligência Integrada</a></li>
+                        <!-- Bloco menor destacando "Inteligência Integrada" -->
                         <li class="lista-objeto"><a href="#" class="bloco-menor">Conectividade<br>5G</a></li>
+                        <!-- Bloco menor destacando "Conectividade 5G" com quebra de linha -->
                         <li class="lista-objeto"><a href="#" class="bloco-menor">Sustentabilidade Garantida</a></li>
+                        <!-- Bloco menor destacando "Sustentabilidade Garantida" -->
                     </ul>
-                </div> 
+                </div>
+                <!-- Fim do contêiner para as listas de inovações -->
             </div>
+            <!-- Fim do contêiner dos blocos de textos -->
         </section>
+        <!-- Fim da seção de blocos de inovações -->
 
         <section class="pesquisa">
+            <!-- Seção para captura de e-mails, incentivando os usuários a receber novidades -->
             <h3 class="pesquisa-texto">Receba as próximas<br>novidades!</h3>
+            <!-- Título da seção com quebra de linha para ênfase -->
             <input type="email" class="pesquisa-busca" placeholder="Digite seu email:">
+            <!-- Campo de entrada para o e-mail, com placeholder orientando o usuário -->
         </section>
+        <!-- Fim da seção de captura de e-mails -->
     </main>
     
     <footer class="rodape">
+        <!-- Rodapé da página, contendo informações sobre a empresa, contato, serviços e redes sociais -->
         <ul class="rodape-lista">
+            <!-- Lista que agrupa todas as seções do rodapé -->
             <li class="lista-principal">
+                <!-- Primeira seção do rodapé com informações sobre a empresa -->
                 <h3 class="lista-titulo">Sobre a TEA</h3>
+                <!-- Título da seção "Sobre a TEA" -->
                 <p class="lista-texto">Somos pioneiros no Brasil no desenvolvimento<br>de semicondutores de alta performance, entregando soluções<br>inovadoras para o mercado global.</p>
+                <!-- Texto descritivo sobre a empresa, com quebras de linha para organização -->
             </li>
             <li class="lista-classes">
+                <!-- Segunda seção do rodapé com informações de contato -->
                 <h3 class="lista-titulo">Contato</h3>
+                <!-- Título da seção "Contato" -->
                 <p class="lista-texto">Endereço: Rua da Inovação, 123, São Paulo - SP</p>
+                <!-- Endereço da empresa -->
                 <p class="lista-texto">Telefone: (11)98765-4321</p>
+                <!-- Telefone da empresa -->
                 <p class="lista-texto">Email: <a href="#" class="lista-ancora">contato@tea.com.br</a></p>
+                <!-- Email da empresa com link clicável -->
             </li>
             <li class="lista-classes">
+                <!-- Terceira seção do rodapé com informações sobre serviços -->
                 <h3 class="lista-titulo">Serviços</h3>
+                <!-- Título da seção "Serviços" -->
                 <p class="lista-texto">Design e fabricação de semicondutores</p>
+                <!-- Serviço oferecido: design e fabricação de semicondutores -->
                 <p class="lista-texto">Consultoria em soluções tecnológicas</p>
+                <!-- Serviço oferecido: consultoria em tecnologia -->
                 <p class="lista-texto">Desenvolvimento de hardware customizado</p>
+                <!-- Serviço oferecido: desenvolvimento de hardware -->
             </li>
             <li class="lista-classes">
+                <!-- Quarta seção do rodapé com links para redes sociais -->
                 <h3 class="lista-titulo">Redes Sociais</h3>
+                <!-- Título da seção "Redes Sociais" -->
                 <p class="lista-texto">LinkedIn: <a href="#" class="lista-ancora">linkedin.com/company/tea-semicondutores</a></p>
+                <!-- Link para o perfil da empresa no LinkedIn -->
                 <p class="lista-texto">Twitter: <a href="#" class="lista-ancora">@TEASemicondutores</a></p>
+                <!-- Link para o perfil da empresa no Twitter -->
                 <p class="lista-texto">Instagram: <a href="#" class="lista-ancora">@TEASemicondutores</a></p>
+                <!-- Link para o perfil da empresa no Instagram -->
             </li>
         </ul>
+        <!-- Fim da lista de seções do rodapé -->
     </footer>
+    <!-- Fim do rodapé -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Inclusão da biblioteca Swiper para implementação de carrosséis -->
     <script>
         const swiper = new Swiper('.swiper', {
+            // Inicializa uma nova instância do Swiper e configura as opções
             spaceBetween: 10,
+            // Define o espaçamento (em pixels) entre os slides
             slidesPerView: 1,
+            // Define o número de slides visíveis ao mesmo tempo (neste caso, 1 slide por vez)
             pagination: {
                 el: '.swiper-pagination',
+                // Seleciona o elemento para os indicadores de paginação
                 type: 'bullets',
+                // Define o tipo de paginação como "bullets" (bolinhas clicáveis)
             },
             navigation: {
                 nextEl: '.swiper-button-next',
+                // Seleciona o elemento para o botão "próximo"
                 prevEl: '.swiper-button-prev'
+                // Seleciona o elemento para o botão "anterior"
             }
         });
+        // Fim da configuração do Swiper
     </script>
+    <!-- Fim do script para configurar e inicializar o carrossel -->
 
 </body>
 </html>

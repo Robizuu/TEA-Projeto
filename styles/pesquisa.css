@@ -1,37 +1,38 @@
 .pesquisa {
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-secundaria); /* Fundo com cor secundária para destaque */
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15vh 20vw;
-    margin-top: 10vh;
+    align-items: center; /* Alinha verticalmente o conteúdo ao centro */
+    justify-content: space-between; /* Espaça os elementos nas extremidades */
+    padding: 15vh 20vw; /* Espaçamento vertical e horizontal generoso para "respirar" */
+    margin-top: 10vh; /* Espaço acima da seção para separação visual */
 }
 
 .pesquisa-texto {
-    color: var(--branco);
-    font-size: 2.25rem;
+    color: var(--branco); /* Texto em branco para contraste */
+    font-size: 2.25rem; /* Texto grande e legível para chamar atenção */
 }
 
 .pesquisa-busca {
-    border: 1px solid var(--cor-secundaria);
-    color: var(--cor-secundaria);
-    border-radius: 24px;
-    padding: 1em;
-    width: 40%;
-    font-family: var(--fonte-secundaria);
+    border: 1px solid var(--cor-secundaria); /* Borda na cor secundária para harmonizar */
+    color: var(--cor-secundaria); /* Cor do texto igual à borda */
+    border-radius: 24px; /* Cantos arredondados para suavidade */
+    padding: 1em; /* Espaço interno confortável para o input */
+    width: 40%; /* Largura definida para não ocupar muito espaço */
+    font-family: var(--fonte-secundaria); /* Fonte diferente para diferenciar do título */
 }
 
+/* Responsividade para telas menores */
 @media (max-width:768px) {
     .pesquisa {
-        padding: 10vh 5vw;
-        flex-direction: column;
+        padding: 10vh 5vw; /* Reduz padding para telas menores */
+        flex-direction: column; /* Alinha verticalmente os itens para melhor visualização */
     }
 
     .pesquisa-texto {
-        margin-bottom: 1em;
+        margin-bottom: 1em; /* Espaço entre texto e campo de busca para separar visualmente */
     }
 
     .pesquisa-busca {
-        width: 80%;
+        width: 80%; /* Campo de busca ocupa mais espaço na vertical para facilitar o uso */
     }
 }

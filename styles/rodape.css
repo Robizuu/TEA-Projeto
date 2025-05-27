@@ -1,50 +1,50 @@
 .rodape {
-    background-color: var(--branco);
+    background-color: var(--branco); /* Fundo branco para contraste e limpeza visual */
 }
 
 .rodape-lista {
-    display: flex;
-    padding: 5em 10em 8em 10em;
-    justify-content: space-around;
+    display: flex; /* Layout flexível em linha para distribuir as seções do rodapé */
+    padding: 5em 10em 8em 10em; /* Espaçamento generoso em volta para dar "respiro" */
+    justify-content: space-around; /* Espaça os itens de forma equilibrada no rodapé */
 }
 
 .lista-principal {
     display: flex;
-    margin: 0.6em 0;
-    flex-direction: column;
-    padding-left: 1em;
+    margin: 0.6em 0; /* Espaço vertical entre itens para legibilidade */
+    flex-direction: column; /* Organiza os itens em coluna (vertical) */
+    padding-left: 1em; /* Espaço interno à esquerda para alinhamento */
 }
 
 .lista-classes {
     display: flex;
     margin: 0.6em 0;
     flex-direction: column;
-    padding-left: 1em;
-    padding-right: 1em;
-    border-left: 1px solid var(--cinza);
+    padding-left: 1em; 
+    padding-right: 1em; /* Espaço interno à direita para separar visualmente */
+    border-left: 1px solid var(--cinza); /* Linha separadora para delimitar seções */
 }
 
 .lista-titulo {
-    font-size: 2.25rem;
-    margin-bottom: 0.5em;
-    color: var(--cor-secundaria);
+    font-size: 2.25rem; /* Títulos maiores para hierarquia visual */
+    margin-bottom: 0.5em; /* Espaço abaixo para separar do conteúdo */
+    color: var(--cor-secundaria); /* Cor destacada para os títulos */
 }
 
 .lista-texto {
-    color: var(--cor-terciaria);
-    margin-bottom: 0.5em;
+    color: var(--cor-terciaria); /* Texto em cor mais neutra, menos chamativa */
+    margin-bottom: 0.5em; /* Espaço entre textos para melhorar leitura */
 }
 
 .lista-ancora {
-    color: var(--cor-terciaria);
+    color: var(--cor-terciaria); /* Links com mesma cor do texto para harmonizar */
 }
 
 @media (max-width:768px) {
     .lista-classes {
-        display: none;
+        display: none; /* Esconde seções para evitar poluição visual em telas pequenas */
     }
 
     .rodape-lista {
-        padding: 2em;
+        padding: 2em; /* Padding reduzido para aproveitar melhor o espaço limitado */
     }
 }

@@ -1,114 +1,115 @@
 .blocos {
-    max-width: 1050px;
-    margin: 0 auto;
-    padding: 40px 50px;
+    max-width: 1050px; /* Limita a largura máxima do container para manter o layout organizado */
+    margin: 0 auto; /* Centraliza horizontalmente na página */
+    padding: 40px 50px; /* Espaçamento interno para dar "respiro" ao conteúdo */
     display: flex;
-    flex-direction: column;
-    align-self: center;
+    flex-direction: column; /* Organiza elementos filhos verticalmente */
+    align-self: center; /* Centraliza este elemento dentro do flex container pai, se houver */
 }
 
 .blocos-container {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 4em 0 2em 0;
+    flex-direction: column; /* Conteúdo empilhado verticalmente */
+    width: 100%; /* Usa toda a largura do container pai */
+    margin: 4em 0 2em 0; /* Espaçamento vertical acima e abaixo */
 }
 
 .blocos-titulo {
-    font-size: 2rem;
-    font-family: var(--fonte-principal);
+    font-size: 2rem; /* Tamanho adequado para títulos */
+    font-family: var(--fonte-principal); /* Usa fonte personalizada para destaque */
 }
 
 .blocos-texto {
-    font-size: 3.43rem;
+    font-size: 3.43rem; /* Texto grande para chamar atenção */
     font-family: var(--fonte-principal);
 }
 
 .blocos-container-textos {
     display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
+    align-items: center; /* Alinha verticalmente os itens ao centro */
+    text-align: center; /* Centraliza o texto dentro dos elementos */
+    justify-content: space-between; /* Espaça igualmente os elementos no container */
 }
 
 .blocos-container,
 .blocos-container-textos {
-    width: 100%;
+    width: 100%; /* Ambos containers ocupam toda largura disponível */
 }
 
 .container-lista {
-    justify-content: space-between;
+    justify-content: space-between; /* Espaça os itens da lista igualmente */
 }
 
 .lista-menor {
-    display: flex;
+    display: flex; /* Organiza os itens da lista em linha */
 }
 
 .bloco-maior {
     display: flex;
     text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: center; /* Centraliza conteúdo dentro do bloco */
     width: 13em;
     height: 8.5em;
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-secundaria); /* Cor de destaque */
     color: var(--branco);
-    font-size: 40px;
+    font-size: 2.5rem; /* Texto grande dentro do bloco maior */
     text-decoration: none;
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Animação suave no hover */
 }
 
 .bloco-maior:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    transform: scale(1.03); /* Leve aumento ao passar o mouse */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
 }
 
 .bloco-menor {
     display: flex;
     text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: center; /* Centraliza conteúdo */
     width: 10em;
     height: 10em;
     background-color: var(--cor-secundaria);
     color: var(--branco);
-    margin: 0.5em;
+    margin: 0.5em; /* Espaço entre os blocos menores */
     text-decoration: none;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .bloco-menor:hover {
-    transform: scale(1.07);
+    transform: scale(1.07); /* Maior destaque no hover para blocos menores */
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
 }
 
+/* Estilos para telas pequenas (até 768px) */
 @media (max-width:768px) {
     .blocos-container-textos {
-        flex-direction: column;
+        flex-direction: column; /* Muda para layout vertical para melhor leitura */
     }
 
     .bloco-maior {
-        width: 8.4em;
+        width: 8.4em; /* Ajusta tamanho para telas pequenas */
     }
 
     .lista-menor {
-        flex-direction: column;
+        flex-direction: column; /* Lista também em coluna para mobile */
     }
 
     .container-lista {
-        display: flex;
+        display: flex; /* Mantém display flex para alinhar os itens */
     }
 
     .blocos-container {
-        text-align: center;
+        text-align: center; /* Centraliza texto em mobile */
     }
 
     .blocos-titulo {
-        font-size: 1.56rem;
+        font-size: 1.56rem; /* Reduz tamanho do título em dispositivos pequenos */
     }
 
     .blocos-texto {
         padding-top: 0.5em;
-        font-size: 2.5rem;
+        font-size: 2.5rem; /* Ajusta tamanho do texto para melhor proporção */
     }
 }

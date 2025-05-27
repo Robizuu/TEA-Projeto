@@ -1,34 +1,34 @@
 .secao-background {
-    background-image: url(../assets/Section\ 3.png);
-    background-repeat: no-repeat;
-    display: block;
-    background-position: center;
-    height: 60vh;
-    width: 100%;
-    background-size: cover;
-    justify-content: center;
-    position: relative;
+    background-image: url(../assets/Section\ 3.png); /* Define uma imagem de fundo */
+    background-repeat: no-repeat; /* Impede repetição da imagem */
+    display: block; /* Define o elemento como bloco */
+    background-position: center; /* Centraliza a imagem de fundo */
+    height: 60vh; /* Altura da seção: 60% da altura da viewport */
+    width: 100%; /* Largura total do elemento */
+    background-size: cover; /* Cobre toda a área, mantendo proporção da imagem */
+    justify-content: center; /* Não tem efeito aqui, pois display é block (apenas para flexbox) */
+    position: relative; /* Posiciona o container para elementos absolutos filhos */
 }
 
 .background-titulo {
-    color: var(--branco);
-    font-size: 40px;
-    position: 200px;
-    position: absolute;
-    bottom: 2em;
-    left: 3em;
-    font-family: var(--fonte-principal);
+    color: var(--branco); /* Cor branca para o texto */
+    font-size: 2.5rem; /* Texto grande para destaque */
+    position: absolute; /* Posição absoluta dentro do container pai */
+    bottom: 2em; /* Posiciona 2em acima da base do container */
+    left: 3em; /* Posiciona 3em a partir da borda esquerda */
+    font-family: var(--fonte-principal); /* Fonte personalizada para destaque */
 }
 
+/* Estilos para telas pequenas (até 768px de largura) */
 @media (max-width:768px) {
     .secao-background {
-        background-size: cover;
-        height: 70vh;
+        background-size: cover; /* Mantém o ajuste da imagem */
+        height: 70vh; /* Aumenta a altura para 70% da viewport em dispositivos móveis */
     }
 
     .background-titulo {
-        bottom: 2em;
-        left: 1em;
-        font-size: 1.56rem;
+        bottom: 2em; /* Mantém distância da base */
+        left: 1em; /* Aproxima o texto da borda esquerda para melhor espaço em mobile */
+        font-size: 1.56rem; /* Reduz tamanho da fonte para melhor leitura em telas menores */
     }
 }
