@@ -19,6 +19,8 @@
     /* Cor de fundo principal do site */
     --cor-secundaria: #E30613;
     /* Cor secundária para elementos destacados */
+    --cor-hover: #C10510;
+    /*Cor para elemento hover*/
     --cor-terciaria: #4E4E4E;
     /* Cor terciária para elementos adicionais */
     --branco: #f6f6f6;

@@ -18,6 +18,14 @@
 .opcoes__link {
     color: var(--branco); /* Links em branco para destaque no fundo escuro */
     text-decoration: none; /* Remove sublinhado padrão dos links */
+    margin: 0.5em; /*Garante uma margem e um padding correto para telas maiores*/
+    padding: 0.5em;
+    transition: background-color 0.3s ease; /*Animacação para transição de cor*/
+    border-radius: 0.5em; /*Ajusta para uma borda arredondada*/
+}
+
+.opcoes__link:hover {
+    background-color: var(--cor-hover); /*Garante uma cor alternativa ao passar o mouse*/
 }
 
 .cabecalho {
@@ -36,7 +44,6 @@
 
 .opcoes {
     display: flex; /* Lista horizontal de opções */
-    gap: 45px; /* Espaçamento entre itens da lista */
 }
 
 .cabecalho-pesquisa {
@@ -82,12 +89,23 @@
 @media (max-width:768px) {
     .cabecalho {
         padding: 0.5em 1em; /* Reduz padding para melhor uso em telas pequenas */
+        justify-content: space-evenly; /*Ajusta os itens para centralizar */
     }
 
     .cabecalho-pesquisa {
         top: 14.5vh;
         padding: 5vh 25vw 5vh 25vw;
         width: 50vw; /* Largura reduzida para caber melhor na tela */
+    }
+
+    .opcoes__link {
+        margin: 0; /*Define a margem e padding para 0 para garantir melhor visão em dispositivos menores*/
+        padding: 0;
+        transition: none; /*Desativa animação para dispositivos móveis*/
+    }
+
+    .opcoes__link:hover {
+        background-color: var(--cor-secundaria); /*Garante coloração padrão ao clicar*/
     }
 
     .opcoes {
